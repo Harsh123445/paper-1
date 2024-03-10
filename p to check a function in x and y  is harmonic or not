@@ -1,0 +1,10 @@
+u:given function of x and y$
+u_xx:diff(u,x,2)$
+u_yy:diff(u,y,2)$
+print("u=",u)$
+print("u_xx=",radcan(u_xx))$
+print("u_yy=",radcan(u_yy))$
+print("u_xx+u_yy=",radcan(u_xx+u_yy))$
+if radcan(u_xx+u_yy)=0 then
+print("given function is harmonic")
+else print("given function is not harmonic")$
