@@ -1,0 +1,12 @@
+u:given fun$
+u_r:diff(u,r)$
+u_rr:diff(u,r,2)$
+u_θθ:diff(u,θ,2)$
+print("u=",u)$
+print("u_r=",radcan(u_r))$
+print("u_rr=",radcan(u_rr))$
+print("u_θθ=",radcan(u_θθ))$
+print("u_rr+(u_r)/r+(u_θθ)/r^2=",radcan(u_rr)+(u_r)/r+(u_θθ)/r^2))$
+if radcan(u_rr+u_r)/r+(u_θθ)/r^2)=0 then
+print("given function is harmonic")
+else print("given function is not harmonic")$
