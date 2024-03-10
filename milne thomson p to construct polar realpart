@@ -1,0 +1,8 @@
+u:cos(θ)/r$
+u_r:diff(u,r)$
+u_θ:diff(u,θ)$
+f:radcan(subst([r=z,θ=0],exp(-%i*θ)*(u_r-%i*u_θ/r)))$
+F:radcan(integrate(f,z))$
+print("v=",v)$
+print("f(z)=",f)$
+print("required analytic function is f(z)=",F)$
