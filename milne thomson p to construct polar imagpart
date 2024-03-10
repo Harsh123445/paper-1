@@ -1,0 +1,8 @@
+v:(r-1/r)*sin(θ)$
+v_r:diff(v,r)$
+v_θ:diff(v,θ)$
+f:radcan(subst([r=z,θ=0],exp(-%i*θ)*(v_θ/r+%i*v_r)))$
+F:radcan(integrate(f,z))$
+print("v=",v)$
+print("f(z)=",f)$
+print("required analytic function is f(z)=",F)$
