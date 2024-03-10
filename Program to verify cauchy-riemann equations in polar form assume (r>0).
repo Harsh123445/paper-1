@@ -1,0 +1,20 @@
+assume(r>0)$
+z:r*exp(%i*θ)$
+f(z):=given function of z$
+u:realpart(f(z))$
+v:imagpart(f(z))$
+u_x:diff(u,x)$
+u_y:diff(u,y)$
+v_x:diff(v,x)$
+v_y:diff(v,y)$
+print("f(z)=",f(z))$
+print("u=",u)$
+print("v=",v)$
+print("u_x=",u_x)$
+print("v_y=",v_y)$
+print("u_y=",u_y)$
+print("-v_x=",-v_x)$
+if radcan(u_x)=radcan(v_y) and radcan(u_y)=radcan(-v_x) then
+print("C-R equation are satidfied by f(z) and hence is analytic")
+else
+print("C-R equation are not satisfied by f(z) and hence f(z) is not analytic")$
