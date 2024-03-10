@@ -1,0 +1,8 @@
+u:given function of x and y$
+u_x:diff(u,x)$
+u_y:diff(u,y)$
+f:radcan(subst([x=z,y=0],u_x-%i*u_y))$
+F:radcan(integrate(f,z))$
+print("u=",u)$
+print("f(z)=",f)$
+print("required analytic function is f(z)=",F)$
