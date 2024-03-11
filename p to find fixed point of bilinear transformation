@@ -1,0 +1,6 @@
+w(z):=(1-z)/(1+z)$
+SOL:solve(z=w(z),z)$
+print("Given Bilinear Transformation is w(z)=",w(z))$
+if length(SOL)=0 then print("Fixed point of w(z) is", inf)
+elseif length(SOL)=1 then print("Fixed point of w(z) is", SOL[1])
+else print("Fixed points of w(z) are", SOL[1], "and",SOL[2])$
