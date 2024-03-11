@@ -1,0 +1,13 @@
+w(z):=(1+%i*z)/(1-%i*z)$
+z1:%i$
+z2:1$
+z3:2-%i$
+z4:3$
+CR1:radcan(((z1-z2)*(z3-z4))/((z2-z3)*(z4-z1)))$
+CR2:radcan(((w(z1)-w(z2))*(w(z3)-w(z4)))/((w(z2)-w(z3))*(w(z4)-w(z1))))$
+print("Given transformation is w(z) =", w(z))$
+print("Cross Ratio (z1, z2, z3, z4) =", rectform(CR1))$
+print("Cross Ratio (wl, w2, w3, w4) =", rectform (CR2))$
+if rectform(CR1)=rectform(CR2) then
+print("Cross ratio is invariant in the given transformation")
+else print("Cross ratio is not preserved in the given transformation")$
