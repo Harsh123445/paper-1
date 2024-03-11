@@ -1,0 +1,10 @@
+kill(all)$
+n:given value of n(if n given)$
+θ=given value of θ (if given)$
+LHS:(cos(θ)+%i*sin(θ))^n$
+RHS:(cos(n*θ)+%i*sin(n*θ))$
+print("LHS=",LHS)$
+print("on simplication LHS=",trigrat(LHS))$
+print("RHS=",RHS)$
+if trigrat (LHS)+(RHS) then
+print("De moviver's theorem is not verified")$
