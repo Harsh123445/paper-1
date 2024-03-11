@@ -1,0 +1,6 @@
+z1:%i$
+z2:1$
+z3:2-%i$
+z4:3$
+CR:radcan(((z1-z2)*(z3-z4))/((z2-z3)*(z4-z1)))$
+print("cross ratio(z1,z2,z3,z4)=",CR)$
