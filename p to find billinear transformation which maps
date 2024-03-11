@@ -1,0 +1,8 @@
+z1: given value of z1$
+z2: given value of z2$
+z3: given value of z3$
+w1: given value of w1$
+w2: given value of w2$
+w3: given value of w3$
+eq:(w-w1)*(w2-w3)*(z1-z2)*(z3-z)=(w1-w2)*(w3-w)*(z-z1)*(z2-z3)$
+print("Required Bilinear Transformation is w(z)=", radcan(rhs(solve(eq,w)[1])))$
