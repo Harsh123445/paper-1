@@ -1,20 +1,20 @@
-assume(r>0)$
+assume (r>0)$
 z:r*exp(%i*θ)$
-f(z):=given function of z$
+f(z):=z^n$
 u:realpart(f(z))$
 v:imagpart(f(z))$
-u_x:diff(u,x)$
-u_y:diff(u,y)$
-v_x:diff(v,x)$
-v_y:diff(v,y)$
+u_r:diff(u,r)$
+u_θ:diff(u.θ)$
+v_r:diff(v,r)$
+v_θ:diff(v,θ)$
 print("f(z)=",f(z))$
-print("u=",u)$
-print("v=",v)$
-print("u_x=",u_x)$
-print("v_y=",v_y)$
-print("u_y=",u_y)$
-print("-v_x=",-v_x)$
-if radcan(u_x)=radcan(v_y) and radcan(u_y)=radcan(-v_x) then
-print("C-R equation are satidfied by f(z) and hence is analytic")
+print("u=",radcan(u))$
+print("v=",radcan(v))$
+print("ru_r=",radcan(r*u_r))$
+print("v_θ=",radcan(v_θ))$
+print("rv_r=",radcan(r*v_r))$
+print("-u_θ=",radcan(-u_θ))$
+if radcan(r*u_r)=radcan(v_θ) and radcan(r*v_r)=radcan(-u_θ) then 
+print("C-R equation is satisfied by f(z) hence it is analytic")
 else
-print("C-R equation are not satisfied by f(z) and hence f(z) is not analytic")$
+print("C-R equation is not satisfied by f(z) hence it is not analytic")$
